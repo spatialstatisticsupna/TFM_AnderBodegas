@@ -158,7 +158,6 @@ dev.off()
 pattern.S <- unlist(lapply(model$marginals.random$ID.area, function(x) inla.emarginal(function(y) 100000*tasa.global*exp(y),x)))
 carto$pattern.S <- pattern.S
 
-
 archivo <- "Figuras/Mapa_CancerPulmon_f_SpatialPattern.jpeg"
 n.color <- 7
 paleta <- get_brewer_pal("-RdYlGn", n = n.color, contrast = 0.8, plot = F)

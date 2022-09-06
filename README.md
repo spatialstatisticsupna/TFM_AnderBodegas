@@ -38,6 +38,14 @@ El código de R correspondiente al análisis de datos...
 
   AÑADIR DESCRIPCIÓN
 
+- [**Modelos_EspacioTemporales.R**](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/R/Modelos_EspacioTemporales.R)
+
+  AÑADIR DESCRIPCIÓN
+  
+- [**Figuras**](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/R/Figuras)
+
+  AÑADIR DESCRIPCIÓN
+
   
 # Agradecimientos
 Este Trabajo Fin de Máster ha sido realizado bajo la financiación de las Ayudas de Iniciación a la Investigación de la Universidad Pública de Navarra en el ámbito de sus Institutos de Investigación durante el curso académico 2021/2022 ([resolución nº 602/2022](https://www2.unavarra.es/gesadj/centroJeronimoAyanz/JDA22Res.%20602%20TFM_INSTITUTOS.pdf)).

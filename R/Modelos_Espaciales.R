@@ -14,7 +14,7 @@ library(tmaptools)
 datos_gb_f <- read.csv("../Datos/Datos_gb_f.csv", header=T)
 datos_gb_m <- read.csv("../Datos/Datos_gb_m.csv", header=T)
 
-# Leemos la cartografía de Gran BretaÃ±a
+# Leemos la cartografía de Gran Bretaña
 carto_gb <- st_read("../Datos/Carto/carto_gb.shp")
 head(carto_gb)
 
@@ -50,7 +50,7 @@ carto_gb <- carto_gb[order(carto_gb$Code), ]
 
 # Seleccionamos las variables de interés
 inc_lung_2019_f <- datos_gb_f[which(datos_gb_f$Year==2019), c("Code","Population","Count_Lung")]
-inc_lung_2019_m <- datos_gb_f[which(datos_gb_m$Year==2019), c("Code","Population","Count_Lung")]
+inc_lung_2019_m <- datos_gb_m[which(datos_gb_m$Year==2019), c("Code","Population","Count_Lung")]
 
 # Cambiamos el nombre de la variable para que cuadre con las fórmulas
 names(inc_lung_2019_f)[3] <- "Obs"
@@ -63,8 +63,8 @@ names(inc_lung_2019_m)[3] <- "Obs"
 inc_lung_2019_f$TC <- inc_lung_2019_f$Obs/inc_lung_2019_f$Population*100000
 carto <- merge(carto_gb,inc_lung_2019_f)
 
-# Creamos los tres mapas y los guardamos en la carpeta de resultados
-archivo <- "Figuras/Mapa_CancerPulmon_f.jpeg"
+# Creamos los tres mapas y los guardamos en la carpeta de figuras
+archivo <- "Figuras/Mapa_CancerPulmon_2019f.jpeg"
 
 n.color <- 7
 paleta <-  get_brewer_pal("Blues", n = n.color, contrast = 0.8, plot = F)
@@ -77,7 +77,7 @@ breaks.TC[n.color+1] <- ceiling(max(carto$TC))
 graphics.off()
 jpeg(file = archivo, width = 2000, height = 1200)
 print(tm_shape(carto) + 
-        tm_polygons(c("Obs","Population","TC"), style = "fixed", n = 7,
+        tm_polygons(c("Obs","Population","TC"), style = "fixed", n = n.color,
                     breaks=list(breaks.obs,breaks.pop,breaks.TC),
                     lwd = 2, border.col = "black", palette = paleta, legend.reverse = T) + 
         tm_layout(title = "", legend.title.size = 2, legend.text.size = 1.5, legend.position = c("left", "top")))
@@ -112,7 +112,7 @@ summary(model1)
 
 
 # Representamos las distribuciones marginales a posteriori del valor base, del parámetro espacial correspondiente
-# a la primera región (Barnsley) y del hiperparámetro. Lo guardamos en la carpeta de resultados
+# a la primera región (Barnsley) y del hiperparámetro. Lo guardamos en la carpeta de figuras
 archivo <- "Figuras/Posteriores_SP.pdf"
 
 graphics.off()
@@ -174,6 +174,7 @@ model3 <- inla(formula=form3, family="poisson", data=inc_lung_2019_f, E=Populati
 
 
 # # NOTA: Los modelos pueden ajustarse directamente utilizando la librería "bigDM"
+# library(bigDM)
 # model1 <- CAR_INLA(carto=carto, ID.area="Code", O="Obs", E="Population", W=adj_gb,
 #                    prior="intrinsic", model="global", strategy="laplace")
 # 
@@ -195,29 +196,39 @@ Tabla <- data.frame(mean.deviance=unlist(lapply(MODELOS, function(x) x$dic$mean.
 print(Tabla)
 
 
-# Representamos en un mapa las tasas ajustadas y la probabilidad de que supere a la tasa media de GB
+#------------------------------------------------------------------------------#
+# 5) REPRESENTACIONES GRÁFICAS
+#------------------------------------------------------------------------------#
 model <- model3
+
+# Representamos en un mapa las tasas ajustadas y la probabilidad de que supere a la tasa media de GB
 tasa.global <- exp(model$summary.fixed$`0.5quant`)
   
 carto$TA <- model$summary.fitted.values$`0.5quant`*100000
 carto$Prob <- unlist(lapply(model$marginals.fitted.values, function(x) 1-inla.pmarginal(tasa.global,x)))
-  
 
-# Creamos los mapas y los guardamos en la carpeta de resultados
-archivo <- "Figuras/Mapa_CancerPulmon_f_TA.jpeg"
+
+# Creamos los mapas y los guardamos en la carpeta figuras
+archivo <- "Figuras/Mapa_CancerPulmon_2019f_TA.jpeg"
+
 n.color <- 7
-paleta <- get_brewer_pal("-RdYlGn", n = n.color, contrast = 0.8)
+paleta <- get_brewer_pal("-RdYlGn", n = n.color, contrast = 0.8, plot = F)
+values <- seq(min(model$summary.fitted.values$mean),max(model$summary.fitted.values$mean),length.out=n.color+1)*100000
+values[1] <- floor(values[1])
+values[n.color+1] <- ceiling(values[n.color+1])
+values <- round(values)
+  
 graphics.off()
 jpeg(file = archivo, width = 1500, height = 2500)
 print(tm_shape(carto) + 
-        tm_polygons("TA", style = "equal", n = n.color, lwd = 2, border.col = "black", palette = paleta, legend.reverse = T) + 
+        tm_polygons("TA", style = "fixed", breaks=values, lwd = 2, border.col = "black", palette = paleta, legend.reverse = T) + 
         tm_layout(title = "", legend.title.size = 4, legend.text.size = 3.5, legend.position = c("left", "top")))
 dev.off()
 
 
-archivo <- "Figuras/Mapa_CancerPulmon_f_Prob.jpeg"
+archivo <- "Figuras/Mapa_CancerPulmon_2019f_Prob.jpeg"
 n.color <- 5
-paleta <- get_brewer_pal("Blues", n = n.color, contrast = 0.8)
+paleta <- get_brewer_pal("Blues", n = n.color, contrast = 0.8, plot = F)
 graphics.off()
 jpeg(file = archivo, width = 1500, height = 2500)
 print(tm_shape(carto) + 

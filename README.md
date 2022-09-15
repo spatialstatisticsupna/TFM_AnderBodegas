@@ -11,7 +11,7 @@ Este repositorio contiene el código R para reproducir y replicar el análisis d
 
 # Datos
 
-Esta carpeta contiene los ficheros con..., los cuales se han obtenido de los respositorios...
+Esta carpeta contiene los ficheros con los que se ha realizado el tercer capítulo del trabajo, en el que se ilustra el funcionamiento de los modelos con los datos reales de cáncer.
 
 - [**Datos_gb_f.csv**](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/Datos/Datos_gb_f.csv)
 

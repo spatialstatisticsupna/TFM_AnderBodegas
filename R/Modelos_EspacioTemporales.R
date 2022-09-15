@@ -255,7 +255,7 @@ model <- RW1.TypeII
 
 # Representamos las distribuciones a posteriori de los hiperparámetros y del valor base
 # y guardamos en la carpeta de Figuras Espaciotemporales
-archivo <- paste(paste(paste(paste("Figuras/EspacioTemporal/Posteriores", tipo, sep = "_"), cancer, sep = "_"), sexo, sep = "_"), "ST.pdf", sep = "_")
+archivo <- paste(paste(paste(paste("Figuras/EspacioTemporal/Posteriores", tipo, sep = "_"), cancer, sep = "_"), sexo, sep = "_"), "2002_2019.pdf", sep = "_")
 graphics.off()
 pdf(file = archivo, width = 10, height = 7)
 par(mfrow = c(2, 2))

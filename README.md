@@ -1,11 +1,11 @@
 # TFM_AnderBodegas
-Este repositorio contiene el cÛdigo R para reproducir y replicar el an·lisis de datos del Trabajo de Fin de M·ster ["INSERTAR TÕTULO"](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/TFM_AnderBodegas.pdf) realizado por Ander Bodegas DÌez (bajo la supervisiÛn de Aritz Adin y Jaione Etxeberria) en el [M·ster de ModelizaciÛn e InvestigaciÛn Matem·tica, EstadÌstica y ComputaciÛn](https://www.unavarra.es/sites/masteres/ciencias/modelizacion-invest-matematica/presentacion.html) de la Universidad P˙blica de Navarra.
+Este repositorio contiene el c√≥digo R para reproducir y replicar el an√°lisis de datos del Trabajo de Fin de M√°ster ["Modelos espaciales y espaciotemporales en disease mapping"](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/TFM_AnderBodegas.pdf) realizado por Ander Bodegas D√≠ez (bajo la supervisi√≥n de Aritz Adin y Jaione Etxeberria) en el [M√°ster de Modelizaci√≥n e Investigaci√≥n Matem√°tica, Estad√≠stica y Computaci√≥n](https://www.unavarra.es/sites/masteres/ciencias/modelizacion-invest-matematica/presentacion.html) de la Universidad P√∫blica de Navarra.
 
 
-## Õndice
+## √çndice
 
 - [Datos](#Datos)
-- [CÛdigo R](#CÛdigo-r)
+- [C√≥digo R](#C√≥digo-r)
 - [Agradecimientos](#Agradecimientos)
 
 
@@ -15,37 +15,37 @@ Esta carpeta contiene los ficheros con..., los cuales se han obtenido de los res
 
 - [**Datos_gb_f.csv**](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/Datos/Datos_gb_f.csv)
 
-  A—ADIR DESCRIPCI”N
+  A√ëADIR DESCRIPCI√ìN
   
 - [**Datos_gb_m.csv**](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/Datos/Datos_gb_m.csv)
 
-  A—ADIR DESCRIPCI”N
+  A√ëADIR DESCRIPCI√ìN
   
 - [**Carto**](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/Datos/Carto/)
 
-  A—ADIR DESCRIPCI”N
+  A√ëADIR DESCRIPCI√ìN
   
 - [**adj_bg.txt**](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/Datos/Carto/adj_gb.txt)
 
-  A—ADIR DESCRIPCI”N
+  A√ëADIR DESCRIPCI√ìN
 
 
 
-# CÛdigo R
-El cÛdigo de R correspondiente al an·lisis de datos...
+# C√≥digo R
+El c√≥digo de R correspondiente al an√°lisis de datos...
 
 - [**Modelos_Espaciales.R**](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/R/Modelos_Espaciales.R)
 
-  A—ADIR DESCRIPCI”N
+  A√ëADIR DESCRIPCI√ìN
 
 - [**Modelos_EspacioTemporales.R**](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/R/Modelos_EspacioTemporales.R)
 
-  A—ADIR DESCRIPCI”N
+  A√ëADIR DESCRIPCI√ìN
   
 - [**Figuras**](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/R/Figuras)
 
-  A—ADIR DESCRIPCI”N
+  A√ëADIR DESCRIPCI√ìN
 
   
 # Agradecimientos
-Este Trabajo Fin de M·ster ha sido realizado bajo la financiaciÛn de las Ayudas de IniciaciÛn a la InvestigaciÛn de la Universidad P˙blica de Navarra en el ·mbito de sus Institutos de InvestigaciÛn durante el curso acadÈmico 2021/2022 ([resoluciÛn n∫ 602/2022](https://www2.unavarra.es/gesadj/centroJeronimoAyanz/JDA22Res.%20602%20TFM_INSTITUTOS.pdf)).
+Este Trabajo Fin de M√°ster ha sido realizado bajo la financiaci√≥n de las Ayudas de Iniciaci√≥n a la Investigaci√≥n de la Universidad P√∫blica de Navarra en el √°mbito de sus Institutos de Investigaci√≥n durante el curso acad√©mico 2021/2022 ([resoluci√≥n n¬∫ 602/2022](https://www2.unavarra.es/gesadj/centroJeronimoAyanz/JDA22Res.%20602%20TFM_INSTITUTOS.pdf)).

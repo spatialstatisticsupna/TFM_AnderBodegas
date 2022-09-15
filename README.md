@@ -15,36 +15,36 @@ Esta carpeta contiene los ficheros con..., los cuales se han obtenido de los res
 
 - [**Datos_gb_f.csv**](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/Datos/Datos_gb_f.csv)
 
-  AÑADIR DESCRIPCIÓN
+  Esta base de datos contiene para cada región, año y tipo de cáncer el número de casos observados y el número de muertes en mujeres correspondiente.
   
 - [**Datos_gb_m.csv**](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/Datos/Datos_gb_m.csv)
 
-  AÑADIR DESCRIPCIÓN
+  Esta base de datos contiene para cada región, año y tipo de cáncer el número de casos observados y el número de muertes en hombres correspondiente.
   
 - [**Carto**](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/Datos/Carto/)
 
-  AÑADIR DESCRIPCIÓN
+  Esta carpeta contiene los cuatro archivos de la cartografía de Gran Bretaña, además de la matriz de adyacencia conexa.
   
 - [**adj_bg.txt**](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/Datos/Carto/adj_gb.txt)
 
-  AÑADIR DESCRIPCIÓN
+  Este archivo es la matriz de adyacencia de las regiones bajo estudio, en la que se entiende que dos regiones son vecinas si comparten frontera. Además, se han añadido 9 conexiones extra para conectar diversas islas y hacer el grafo conexo. 
 
 
 
 # Código R
-El código de R correspondiente al análisis de datos...
+El código de R correspondiente al tercer capítulo del trabajo, en el que se ilustra el funcionamiento de los modelos con los datos reales de cáncer.
 
 - [**Modelos_Espaciales.R**](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/R/Modelos_Espaciales.R)
 
-  AÑADIR DESCRIPCIÓN
+  Este script realiza el análisis espacial, creando los mapas y gráficos presentes en el trabajo. Es posible elegir el tipo de cáncer, el sexo, el tipo de dato (incidencia o mortalidad), el año (desde 2002 hasta 2019) y el umbral para las probabilidades de exceso, además de otras opciones al comienzo del script.
 
 - [**Modelos_EspacioTemporales.R**](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/R/Modelos_EspacioTemporales.R)
 
-  AÑADIR DESCRIPCIÓN
+  Este script realiza el análisis espaciotemporal (2002-2019), creando los mapas y gráficos presentes en el trabajo. Es posible elegir el tipo de cáncer, el sexo, el tipo de dato (incidencia o mortalidad) y el umbral para las probabilidades de exceso, además de otras opciones al comienzo del script.
   
 - [**Figuras**](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/R/Figuras)
 
-  AÑADIR DESCRIPCIÓN
+  En esta carpeta se guardan los diferentes mapas y gráficas que crean los dos scripts mencionados. En particular, en la carpeta [**Espacial**](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/R/Figuras/Espacial) se guardarán los resultados de [**Modelos_Espaciales.R**](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/R/Modelos_Espaciales.R) y en [**EspacioTemporal**](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/R/Figuras/EspacioTemporal) se guardarán los de [**Modelos_EspacioTemporales.R**](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/R/Modelos_EspacioTemporales.R).
 
   
 # Agradecimientos

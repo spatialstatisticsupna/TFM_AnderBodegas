@@ -44,7 +44,7 @@ El código de R correspondiente al tercer capítulo del trabajo, en el que se il
   
 - [**Figuras**](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/R/Figuras)
 
-  En esta carpeta se guardan los diferentes mapas y gráficas que crean los dos scripts mencionados. En particular, en la carpeta [**Espacial**](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/R/Figuras/Espacial) se guardarán los resultados de [**Modelos_Espaciales.R**](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/R/Modelos_Espaciales.R) y en [**EspacioTemporal**](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/R/Figuras/EspacioTemporal) se guardarán los de [**Modelos_EspacioTemporales.R**](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/R/Modelos_EspacioTemporales.R).
+  En esta carpeta se guardan los diferentes mapas y gráficos que crean los dos scripts mencionados. En particular, en la carpeta [**Espacial**](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/R/Figuras/Espacial) se guardarán los resultados de [**Modelos_Espaciales.R**](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/R/Modelos_Espaciales.R) y en [**EspacioTemporal**](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/R/Figuras/EspacioTemporal) se guardarán los de [**Modelos_EspacioTemporales.R**](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/R/Modelos_EspacioTemporales.R).
 
   
 # Agradecimientos

@@ -1,5 +1,5 @@
 # TFM_AnderBodegas
-Este repositorio contiene el código R para reproducir y replicar el análisis de datos del Trabajo de Fin de Máster ["Modelos espaciales y espaciotemporales en disease mapping"](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/TFM_AnderBodegas.pdf) realizado por Ander Bodegas Díez (bajo la supervisión de Aritz Adin y Jaione Etxeberria) en el [Máster de Modelización e Investigación Matemática, Estadística y Computación](https://www.unavarra.es/sites/masteres/ciencias/modelizacion-invest-matematica/presentacion.html) de la Universidad Pública de Navarra.
+Este repositorio contiene el código R para reproducir y replicar el análisis de datos del Trabajo de Fin de Máster ["Modelos espaciales y espaciotemporales en disease mapping"](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/TFM_Ander_Bodegas.pdf) realizado por Ander Bodegas Díez (bajo la supervisión de Aritz Adin y Jaione Etxeberria) en el [Máster de Modelización e Investigación Matemática, Estadística y Computación](https://www.unavarra.es/sites/masteres/ciencias/modelizacion-invest-matematica/presentacion.html) de la Universidad Pública de Navarra.
 
 
 ## Índice

@@ -36,11 +36,11 @@ El código de R correspondiente al tercer capítulo del trabajo, en el que se il
 
 - [**Modelos_Espaciales.R**](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/R/Modelos_Espaciales.R)
 
-  Este script realiza el análisis espacial, creando los mapas y gráficos presentes en el trabajo. Es posible elegir el tipo de cáncer, el sexo, el tipo de dato (incidencia o mortalidad), el año (desde 2002 hasta 2019) y el umbral para las probabilidades de exceso, además de otras opciones al comienzo del script.
+  Este script realiza el análisis espacial (datos de incidencia por cáncer de pulmón en mujeres en el año 2019) ajustando los modelos en INLA, permitiendo reproducir todos los mapas y gráficos presentados en el trabajo. Para analizar otras causas disponibles en la base de datos original, es posible elegir el tipo de cáncer, el sexo, el tipo de dato (incidencia o mortalidad) y el umbral para las probabilidades de exceso, además de otras opciones al comienzo del script.
 
 - [**Modelos_EspacioTemporales.R**](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/R/Modelos_EspacioTemporales.R)
 
-  Este script realiza el análisis espaciotemporal (2002-2019), creando los mapas y gráficos presentes en el trabajo. Es posible elegir el tipo de cáncer, el sexo, el tipo de dato (incidencia o mortalidad) y el umbral para las probabilidades de exceso, además de otras opciones al comienzo del script.
+  Este script realiza el análisis espaciotemporal (datos de incidencia por cáncer de pulmón en mujeres durante el periodo 2002-2019) ajustando los modelos en INLA, permitiendo reproducir todos los mapas y gráficos presentados en el trabajo. Al igual que en el caso espacial, es posible seleccionar datos correspondientes a otras causas de la base de datos orginal para replicar el estudio realizado.
   
 - [**Figuras**](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/R/Figuras)
 

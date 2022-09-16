@@ -15,7 +15,7 @@ Esta carpeta contiene los ficheros con los que se ha realizado el tercer capítu
 
 - [**Datos_gb_f.csv**](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/Datos/Datos_gb_f.csv) y [**Datos_gb_m.csv**](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/Datos/Datos_gb_m.csv)
 
-  Bases de datos de incidencia y mortalidad po cáncer en la isla de Gran Bretaña para 11 causas (leucemia, mama, cervix, melanoma, hígado, colorectal, pancreas, estómago, pulmón, vegija y esófago) desagregadas por área y año. Cada fichero contiene las siguientes variables:
+  Bases de datos de incidencia y mortalidad po cáncer en la isla de Gran Bretaña para 11 causas (leucemia, mama, cérvix, melanoma, hígado, colorrectal, páncreas, estómago, pulmón, vejiga y esófago) desagregadas por área y año. Cada fichero contiene las siguientes variables:
   
     - **_Code_**: código identificador del área (S=142 regiones)
     - **_Year_**: identificador del año (periodo 2002-2019)

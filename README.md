@@ -13,21 +13,27 @@ Este repositorio contiene el código R para reproducir y replicar el análisis d
 
 Esta carpeta contiene los ficheros con los que se ha realizado el tercer capítulo del trabajo, en el que se ilustra el funcionamiento de los modelos con los datos reales de cáncer.
 
-- [**Datos_gb_f.csv**](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/Datos/Datos_gb_f.csv)
+- [**Datos_gb_f.csv**](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/Datos/Datos_gb_f.csv) y [**Datos_gb_m.csv**](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/Datos/Datos_gb_m.csv)
 
-  Esta base de datos contiene para cada región, año y tipo de cáncer el número de casos observados y el número de muertes en mujeres correspondiente.
+  Bases de datos de incidencia y mortalidad po cáncer en la isla de Gran Bretaña para 11 causas (leucemia, mama, cervix, melanoma, hígado, colorectal, pancreas, estómago, pulmón, vegija y esófago) desagregadas por área y año. Cada fichero contiene las siguientes variables:
   
-- [**Datos_gb_m.csv**](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/Datos/Datos_gb_m.csv)
+    - **_Code_**: código identificador del área (S=142 regiones)
+    - **_Year_**: identificador del año (periodo 2002-2019)
+    - **_Population_**: población en riesgo
+    - **_Count_All_**: número total de casos registrados
+    - **_Deaths_All_**: número total de muertes registradas
+    - **_Count_xxx_**: número total de casos registrados para cada una de las 11 causas 
+    - **_Deaths_xxx_**: número total de muertes registradas para cada una de las 11 causas
 
-  Esta base de datos contiene para cada región, año y tipo de cáncer el número de casos observados y el número de muertes en hombres correspondiente.
+  _*Fuente de datos_: Sistema nacional de salud para Inglaterra [(NHS England)](https://www.cancerdata.nhs.uk/incidence_and_mortality), Gales [(NHS Wales)](https://phw.nhs.wales/services-and-teams/welsh-cancer-intelligence-and-surveillance-unit-wcisu/) y Escocia [(NHS Scotland)](https://www.opendata.nhs.scot/dataset).
   
 - [**Carto**](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/Datos/Carto/)
 
-  Esta carpeta contiene los cuatro archivos de la cartografía de Gran Bretaña, además de la matriz de adyacencia conexa.
+  Esta carpeta contiene la cartografía (archivos _shapefile_) de las regiones de Gran Bretaña (106 _clinical commissioning group0s_ para Inglaterra, 22 _local authorities_ para Gales y 14 _health boards_ para Escocia), además de la matriz de adyacencia espacial.
   
 - [**adj_bg.txt**](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/Datos/Carto/adj_gb.txt)
 
-  Este archivo es la matriz de adyacencia de las regiones bajo estudio, en la que se entiende que dos regiones son vecinas si comparten frontera. Además, se han añadido 9 conexiones extra para conectar diversas islas y hacer el grafo conexo. 
+  Este archivo contiene la matriz de adyacencia (binaria) correspondiente al grafo de vecindad de las 142 regiones bajo estudio. El grafo original ha sido modificado (se han añadido 9 conexiones extra) para conectar las islas y así obtener un grafo conexo.
 
 
 
